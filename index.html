@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="./Images/favicon.ico">
+    <title>Let's Roll</title>
+</head>
+
+<body>
+
+    <main>
+        <header>
+            <img class="logo" src="./Images/Let's Roll-1.png" alt="Let's Roll , logo with dice">
+        </header>
+
+        <div class="topContainer">
+            <div class="noOfDice">
+                <label for="diceNoSelector">Number of dice:</label>
+                <select name="diceNoSelector" id="diceNoSelector">
+                    <option value="1">1</option>
+                    <option value="2" selected>2</option>
+
+                </select>
+            </div>
+
+            <div id="totalDisplay">
+                <h3 id="rolled">Rolled: <span id="rolledTotalNumber"></span></h3>
+            </div>
+        </div>
+
+        <div class="dice-top-container">
+            <div class="diceContainer">
+                <img src="./Images/dice-6-0.png" class="initialDisplayedDice" alt="Question Mark Dice">
+                <img src="./Images/dice-6-0.png" class="initialDisplayedDice" alt="Question Mark Dice">
+            </div>
+
+            <button id="rollButton">
+                ROLL
+            </button>
+
+    </main>
+
+    <script src="./Dice.js"></script>
+    <link rel="stylesheet" href="./diceStyles.css">
+</body>
+
+</html>
